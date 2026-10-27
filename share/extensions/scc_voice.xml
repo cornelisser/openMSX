@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!DOCTYPE msxconfig SYSTEM 'msxconfig2.dtd'>
+<msxconfig>
+  <info>
+    <name>SCCボイス</name>
+    <manufacturer>-</manufacturer>
+    <code/>
+    <release_year>1988</release_year>
+    <description>SCCボイス (SCC-Voice): Konami-style SCC+ sound cartridge extended with two identical sample voices A and B (MSM5205-compatible ADPCM, RAW8/RAW4, 255-byte FIFOs, SCC-style period counter, ROM fill with loops, click-free loop override), software ADSR/modulation, dedicated Sallen-Key output filter.</description>
+    <type>sound expansion</type>
+  </info>
+  <devices>
+    <primary slot="any">
+      <secondary slot="any">
+        <SCCVoice id="SCCボイス Cartridge with expanded RAM">
+          <mem base="0x4000" size="0x8000"/>
+          <io base="0x74" num="6" type="IO"/>
+          <subtype>expanded</subtype>
+          <sound>
+            <volume>13000</volume>
+          </sound>
+        </SCCVoice>
+      </secondary>
+    </primary>
+  </devices>
+</msxconfig>

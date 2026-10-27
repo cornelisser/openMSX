@@ -1,9 +1,11 @@
 name: Build Snapshots
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
+      - sccvoice
       - WIP-keyboard-stuff
       - sdl3
   pull_request:
@@ -18,21 +20,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - image: ubuntu-latest
-            name: Unit Tests (on Linux)
-            cpu: x86_64
-            os: linux
-            flavour: unittest
-          - image: ubuntu-latest
-            name: Linux (native, super-opt)
-            cpu: x86_64
-            os: linux
-            flavour: super-opt
-          - image: ubuntu-latest
-            name: Linux (native, debug, minimal g++)
-            cpu: x86_64
-            os: linux
-            flavour: debug
           - image: ubuntu-latest
             name: Linux
             cpu: x86_64

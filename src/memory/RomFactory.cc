@@ -9,6 +9,7 @@
 #include "RomGeneric16kB.hh"
 #include "RomKonami.hh"
 #include "RomKonamiSCC.hh"
+#include "RomKonamiSCCPlusVoice.hh"
 #include "RomKonamiKeyboardMaster.hh"
 #include "RomAscii8kB.hh"
 #include "RomAscii8_8.hh"
@@ -249,6 +250,10 @@ std::unique_ptr<MSXDevice> create(DeviceConfig& config)
 		return std::make_unique<RomGeneric16kB>(config, std::move(rom));
 	case KONAMI_SCC:
 		return std::make_unique<RomKonamiSCC>(config, std::move(rom));
+	case KONAMI_SCC_PLUS_VOICE:
+		return std::make_unique<RomKonamiSCCPlusVoice>(config, std::move(rom));
+	case KONAMI_SCC_PLUS_VOICE_RAM:
+		return std::make_unique<RomKonamiSCCPlusVoice>(config, std::move(rom), RomKonamiSCCPlusVoice::RAM_SIZE);
 	case KONAMI:
 		return std::make_unique<RomKonami>(config, std::move(rom));
 	case KBDMASTER:

@@ -48,6 +48,7 @@
 #include "MSXPrinterPort.hh"
 #include "SVIPrinterPort.hh"
 #include "MSXSCCPlusCart.hh"
+#include "MSXSCCVoice.hh"
 #include "PhilipsFDC.hh"
 #include "MicrosolFDC.hh"
 #include "AVTFDC.hh"
@@ -223,6 +224,8 @@ std::unique_ptr<MSXDevice> DeviceFactory::create(DeviceConfig& conf)
 		result = std::make_unique<SVIPrinterPort>(conf);
 	} else if (type == "SCCplus") { // Note: it's actually called SCC-I
 		result = std::make_unique<MSXSCCPlusCart>(conf);
+	} else if (type == "SCCVoice") {
+		result = std::make_unique<MSXSCCVoice>(conf);
 	} else if (type == one_of("WD2793", "WD1770")) {
 		result = createWD2793BasedFDC(conf);
 	} else if (type == "Microsol") {

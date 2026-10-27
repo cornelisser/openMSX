@@ -587,6 +587,7 @@
     <ClCompile Include="$(OpenMSXSrcDir)\memory\RomKonami.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\memory\RomKonamiKeyboardMaster.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\memory\RomKonamiSCC.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomKonamiSCCPlusVoice.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMajutsushi.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\memory\RomManbow2.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMSXtra.cc" />
@@ -654,12 +655,14 @@
     <ClCompile Include="$(OpenMSXSrcDir)\sound\Mixer.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXAudio.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXFmPac.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SCCVoiceCore.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXMixer.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXMoonSound.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXMusic.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXOPL3Cartridge.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXPSG.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXSCCPlusCart.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXSCCVoice.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXTurboRPCM.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXYamahaSFG.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\NullSoundDriver.cc" />
@@ -669,6 +672,7 @@
     <ClCompile Include="$(OpenMSXSrcDir)\sound\ResampleTrivial.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\SamplePlayer.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\SCC.cc" />
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SCCVoiceUnit.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\SDLSoundDriver.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\SN76489.cc" />
     <ClCompile Include="$(OpenMSXSrcDir)\sound\SNPSG.cc" />
@@ -1180,6 +1184,7 @@
     <None Include="$(OpenMSXSrcDir)\memory\RomKonami.hh" />
     <None Include="$(OpenMSXSrcDir)\memory\RomKonamiKeyboardMaster.hh" />
     <None Include="$(OpenMSXSrcDir)\memory\RomKonamiSCC.hh" />
+    <None Include="$(OpenMSXSrcDir)\memory\RomKonamiSCCPlusVoice.hh" />
     <None Include="$(OpenMSXSrcDir)\memory\RomMajutsushi.hh" />
     <None Include="$(OpenMSXSrcDir)\memory\RomManbow2.hh" />
     <None Include="$(OpenMSXSrcDir)\memory\RomMitsubishiMLTS2.hh" />
@@ -1254,12 +1259,14 @@
     <None Include="$(OpenMSXSrcDir)\sound\Mixer.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXAudio.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXFmPac.hh" />
+    <None Include="$(OpenMSXSrcDir)\sound\SCCVoiceCore.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXMixer.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXMoonSound.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXMusic.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXOPL3Cartridge.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXPSG.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXSCCPlusCart.hh" />
+    <None Include="$(OpenMSXSrcDir)\sound\MSXSCCVoice.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXTurboRPCM.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\MSXYamahaSFG.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\NullSoundDriver.hh" />
@@ -1271,6 +1278,7 @@
     <None Include="$(OpenMSXSrcDir)\sound\ResampleTrivial.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\SamplePlayer.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\SCC.hh" />
+    <None Include="$(OpenMSXSrcDir)\sound\SCCVoiceUnit.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\SDLSoundDriver.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\SN76489.hh" />
     <None Include="$(OpenMSXSrcDir)\sound\SNPSG.hh" />

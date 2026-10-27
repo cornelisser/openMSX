@@ -858,6 +858,9 @@
     <ClCompile Include="$(OpenMSXSrcDir)\memory\RomKonamiSCC.cc">
       <Filter>memory</Filter>
     </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\memory\RomKonamiSCCPlusVoice.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\memory\RomMajutsushi.cc">
       <Filter>memory</Filter>
     </ClCompile>
@@ -1014,6 +1017,9 @@
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXFmPac.cc">
       <Filter>sound</Filter>
     </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SCCVoiceCore.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXMixer.cc">
       <Filter>sound</Filter>
     </ClCompile>
@@ -1030,6 +1036,9 @@
       <Filter>sound</Filter>
     </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXSCCPlusCart.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXSCCVoice.cc">
       <Filter>sound</Filter>
     </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\sound\MSXTurboRPCM.cc">
@@ -1054,6 +1063,9 @@
       <Filter>sound</Filter>
     </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\sound\SCC.cc">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="$(OpenMSXSrcDir)\sound\SCCVoiceUnit.cc">
       <Filter>sound</Filter>
     </ClCompile>
     <ClCompile Include="$(OpenMSXSrcDir)\sound\SDLSoundDriver.cc">
@@ -2385,6 +2397,9 @@
     <None Include="$(OpenMSXSrcDir)\memory\RomKonamiSCC.hh">
       <Filter>memory</Filter>
     </None>
+    <None Include="$(OpenMSXSrcDir)\memory\RomKonamiSCCPlusVoice.hh">
+      <Filter>memory</Filter>
+    </None>
     <None Include="$(OpenMSXSrcDir)\memory\RomMajutsushi.hh">
       <Filter>memory</Filter>
     </None>
@@ -2553,6 +2568,9 @@
     <None Include="$(OpenMSXSrcDir)\sound\MSXFmPac.hh">
       <Filter>sound</Filter>
     </None>
+    <None Include="$(OpenMSXSrcDir)\sound\SCCVoiceCore.hh">
+      <Filter>sound</Filter>
+    </None>
     <None Include="$(OpenMSXSrcDir)\sound\MSXMixer.hh">
       <Filter>sound</Filter>
     </None>
@@ -2569,6 +2587,9 @@
       <Filter>sound</Filter>
     </None>
     <None Include="$(OpenMSXSrcDir)\sound\MSXSCCPlusCart.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\MSXSCCVoice.hh">
       <Filter>sound</Filter>
     </None>
     <None Include="$(OpenMSXSrcDir)\sound\MSXTurboRPCM.hh">
@@ -2599,6 +2620,9 @@
       <Filter>sound</Filter>
     </None>
     <None Include="$(OpenMSXSrcDir)\sound\SCC.hh">
+      <Filter>sound</Filter>
+    </None>
+    <None Include="$(OpenMSXSrcDir)\sound\SCCVoiceUnit.hh">
       <Filter>sound</Filter>
     </None>
     <None Include="$(OpenMSXSrcDir)\sound\SDLSoundDriver.hh">

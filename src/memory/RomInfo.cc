@@ -22,6 +22,8 @@ static constexpr auto romTypeInfoArray = [] {
 	// ROM mapper types for normal software (mainly games)
 	r[KONAMI]          = {0x2000, "Konami",          "Konami MegaROM"};
 	r[KONAMI_SCC]      = {0x2000, "KonamiSCC",       "Konami with SCC"};
+	r[KONAMI_SCC_PLUS_VOICE]= {0x2000, "KonamiSCCPlusVoice", "Konami SCC/SCC+ dual-mode + SCCVoice ADPCM voice"};
+	r[KONAMI_SCC_PLUS_VOICE_RAM]= {0x2000, "KonamiSCCPlusVoiceRAM", "Konami SCC/SCC+ dual-mode + SCCVoice + 64kB sample RAM"};
 	r[KBDMASTER]       = {0x4000, "KeyboardMaster",  "Konami Keyboard Master with VLM5030"}; // officially plain 16K
 	r[ASCII8]          = {0x2000, "ASCII8",          "ASCII 8kB"};
 	r[ASCII16]         = {0x4000, "ASCII16",         "ASCII 16kB"};
@@ -127,6 +129,8 @@ static constexpr std::array aliasTable = {
 	RomTypeAndName{KONAMI_SCC,  "2"},
 	RomTypeAndName{KONAMI_SCC,  "SCC"},
 	RomTypeAndName{KONAMI_SCC,  "KONAMI5"},
+	RomTypeAndName{KONAMI_SCC_PLUS_VOICE, "SCCPlusVoice"},
+	RomTypeAndName{KONAMI_SCC_PLUS_VOICE_RAM, "SCCPlusVoiceRAM"},
 	RomTypeAndName{KONAMI,      "KONAMI4"},
 	RomTypeAndName{KONAMI,      "3"},
 	RomTypeAndName{ASCII8,      "4"},
